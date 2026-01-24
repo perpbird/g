@@ -3,7 +3,10 @@ set(PROJECT_NAME g)
 project(${PROJECT_NAME})
 
 # Указать путь к заголовкам GLFW
-include_directories(external/glfw/include)
+include_directories(
+    ${CMAKE_CURRENT_SOURCE_DIR}/external/glad/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/external/glfw/include
+)
 
 # Опции для GLFW (ОЧЕНЬ ВАЖНО: перед add_subdirectory!)
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
@@ -15,7 +18,11 @@ set(GLFW_INSTALL OFF CACHE BOOL "" FORCE)
 add_subdirectory(external/glfw)
 
 # Создать исполняемый файл
-add_executable(${PROJECT_NAME} src/main.cpp)
+add_executable(${PROJECT_NAME} 
+    src/main.cpp
+    src/Render/ShaderRender.cpp
+    src/Render/ShaderRender.h
+)
 
 # Связать с GLFW
 target_link_libraries(${PROJECT_NAME} glfw)
