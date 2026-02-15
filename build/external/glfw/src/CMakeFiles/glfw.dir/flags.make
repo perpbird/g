@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11
 
-C_INCLUDES = -I/home/perpbird/perpvsc/gpp/g/external/glad/include -I/home/perpbird/perpvsc/gpp/g/external/glfw/include -I/home/perpbird/perpvsc/gpp/g/build/_deps/glm-src -I/home/perpbird/perpvsc/gpp/g/external/glfw/src -I/home/perpbird/perpvsc/gpp/g/build/external/glfw/src
+C_INCLUDES = -I/home/perpbird/perpvsc/gpp/g/src -I/home/perpbird/perpvsc/gpp/g/external/glad/include -I/home/perpbird/perpvsc/gpp/g/external/glfw/include -I/home/perpbird/perpvsc/gpp/g/build/_deps/glm-src -I/home/perpbird/perpvsc/gpp/g/external/glfw/src -I/home/perpbird/perpvsc/gpp/g/build/external/glfw/src
 
 C_FLAGS = -std=c99 -fPIC -Wall
 

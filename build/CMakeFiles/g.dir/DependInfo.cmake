@@ -8,8 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/perpbird/perpvsc/gpp/g/src/Renderer/ShaderRenderer.cpp" "CMakeFiles/g.dir/src/Renderer/ShaderRenderer.cpp.o" "gcc" "CMakeFiles/g.dir/src/Renderer/ShaderRenderer.cpp.o.d"
+  "/home/perpbird/perpvsc/gpp/g/src/Core/Application.cpp" "CMakeFiles/g.dir/src/Core/Application.cpp.o" "gcc" "CMakeFiles/g.dir/src/Core/Application.cpp.o.d"
+  "/home/perpbird/perpvsc/gpp/g/src/Core/Window.cpp" "CMakeFiles/g.dir/src/Core/Window.cpp.o" "gcc" "CMakeFiles/g.dir/src/Core/Window.cpp.o.d"
+  "/home/perpbird/perpvsc/gpp/g/src/Graphics/Cube.cpp" "CMakeFiles/g.dir/src/Graphics/Cube.cpp.o" "gcc" "CMakeFiles/g.dir/src/Graphics/Cube.cpp.o.d"
+  "/home/perpbird/perpvsc/gpp/g/src/Graphics/ShaderRenderer.cpp" "CMakeFiles/g.dir/src/Graphics/ShaderRenderer.cpp.o" "gcc" "CMakeFiles/g.dir/src/Graphics/ShaderRenderer.cpp.o.d"
+  "/home/perpbird/perpvsc/gpp/g/src/Graphics/Vertex.cpp" "CMakeFiles/g.dir/src/Graphics/Vertex.cpp.o" "gcc" "CMakeFiles/g.dir/src/Graphics/Vertex.cpp.o.d"
   "/home/perpbird/perpvsc/gpp/g/src/Resource/ResourceManager.cpp" "CMakeFiles/g.dir/src/Resource/ResourceManager.cpp.o" "gcc" "CMakeFiles/g.dir/src/Resource/ResourceManager.cpp.o.d"
+  "/home/perpbird/perpvsc/gpp/g/src/Utils/FileUtils.cpp" "CMakeFiles/g.dir/src/Utils/FileUtils.cpp.o" "gcc" "CMakeFiles/g.dir/src/Utils/FileUtils.cpp.o.d"
+  "/home/perpbird/perpvsc/gpp/g/src/Utils/Logger.cpp" "CMakeFiles/g.dir/src/Utils/Logger.cpp.o" "gcc" "CMakeFiles/g.dir/src/Utils/Logger.cpp.o.d"
+  "/home/perpbird/perpvsc/gpp/g/src/Utils/PathUtils.cpp" "CMakeFiles/g.dir/src/Utils/PathUtils.cpp.o" "gcc" "CMakeFiles/g.dir/src/Utils/PathUtils.cpp.o.d"
   "/home/perpbird/perpvsc/gpp/g/src/main.cpp" "CMakeFiles/g.dir/src/main.cpp.o" "gcc" "CMakeFiles/g.dir/src/main.cpp.o.d"
   )
 

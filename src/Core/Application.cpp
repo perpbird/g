@@ -1,22 +1,13 @@
 #include "Application.h"
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-
-void Application::initOpenGL() {
-    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
-        THROW_ENGINE_EXCEPTION("Failed to initialize GLAD");
-    }
-
-    glEnable(GL_DEPTH_TEST);
-    glViewport(0, 0, window->getWidth(), window->getHeight());
-
-    Logger::info("OpenGL initialized");
-    Logger::info("Renderer: " + std::string((char*)glGetString(GL_RENDERER)));
-    Logger::info("Version: " + std::string((char*)glGetString(GL_VERSION)));
-}
+#include "../Utils/PathUtils.h" 
 
 void Application::initResources() {
-    resources = std::make_unique<ResourceManager>("res/");
+    std::string resourcesPath = PathUtils::getResourcesPath();
+    Logger::info("Resources path: " + resourcesPath);
+    
+    resources = std::make_unique<ResourceManager>(resourcesPath);
     
     shader = resources->loadShader("basic", "vertex.txt", "fragment.txt");
     if (!shader || !shader->isCompiled()) {
@@ -24,6 +15,16 @@ void Application::initResources() {
     }
 
     cube = std::make_unique<Cube>();
+    
+    // Загружаем текстуру
+    auto texture = std::make_unique<Texture>("../textures/checker.png");
+    cube->setTexture(std::move(texture));
+    
+    // Включаем использование текстуры в шейдере
+    shader->use();
+    shader->setBool("useTexture", true);
+    
+    Logger::info("Cube created successfully with texture!");
 
     // Устанавливаем матрицы камеры
     glm::mat4 view = glm::lookAt(
@@ -42,6 +43,19 @@ void Application::initResources() {
     shader->use();
     shader->setMat4("view", view);
     shader->setMat4("projection", projection);
+}
+
+void Application::initOpenGL() {
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
+        THROW_ENGINE_EXCEPTION("Failed to initialize GLAD");
+    }
+
+    glEnable(GL_DEPTH_TEST);
+    glViewport(0, 0, window->getWidth(), window->getHeight());
+
+    Logger::info("OpenGL initialized");
+    Logger::info("Renderer: " + std::string((char*)glGetString(GL_RENDERER)));
+    Logger::info("Version: " + std::string((char*)glGetString(GL_VERSION)));
 }
 
 void Application::handleInput() {

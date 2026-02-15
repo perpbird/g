@@ -1,0 +1,16 @@
+#version 460
+in vec3 color;
+in vec2 texCoord;
+
+out vec4 frag_color;
+
+uniform sampler2D ourTexture;
+uniform bool useTexture;
+
+void main() {
+    if (useTexture) {
+        frag_color = texture(ourTexture, texCoord);
+    } else {
+        frag_color = vec4(color, 1.0);
+    }
+}

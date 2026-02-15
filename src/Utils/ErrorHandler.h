@@ -40,3 +40,4 @@ public:
         GLenum err = glGetError(); \
         THROW_ENGINE_EXCEPTION("OpenGL error: " + std::to_string(err)); \
     }
+    

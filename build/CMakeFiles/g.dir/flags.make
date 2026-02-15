@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/perpbird/perpvsc/gpp/g/external/glad/include -I/home/perpbird/perpvsc/gpp/g/external/glfw/include -I/home/perpbird/perpvsc/gpp/g/build/_deps/glm-src
+CXX_INCLUDES = -I/home/perpbird/perpvsc/gpp/g/src -I/home/perpbird/perpvsc/gpp/g/external/glad/include -I/home/perpbird/perpvsc/gpp/g/external/glfw/include -I/home/perpbird/perpvsc/gpp/g/build/_deps/glm-src
 
 CXX_FLAGS = 
 

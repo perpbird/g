@@ -83,24 +83,80 @@ CMakeFiles/g.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/g.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/perpbird/perpvsc/gpp/g/src/main.cpp -o CMakeFiles/g.dir/src/main.cpp.s
 
-CMakeFiles/g.dir/src/Renderer/ShaderRenderer.cpp.o: CMakeFiles/g.dir/flags.make
-CMakeFiles/g.dir/src/Renderer/ShaderRenderer.cpp.o: /home/perpbird/perpvsc/gpp/g/src/Renderer/ShaderRenderer.cpp
-CMakeFiles/g.dir/src/Renderer/ShaderRenderer.cpp.o: CMakeFiles/g.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/perpbird/perpvsc/gpp/g/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/g.dir/src/Renderer/ShaderRenderer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/g.dir/src/Renderer/ShaderRenderer.cpp.o -MF CMakeFiles/g.dir/src/Renderer/ShaderRenderer.cpp.o.d -o CMakeFiles/g.dir/src/Renderer/ShaderRenderer.cpp.o -c /home/perpbird/perpvsc/gpp/g/src/Renderer/ShaderRenderer.cpp
+CMakeFiles/g.dir/src/Core/Application.cpp.o: CMakeFiles/g.dir/flags.make
+CMakeFiles/g.dir/src/Core/Application.cpp.o: /home/perpbird/perpvsc/gpp/g/src/Core/Application.cpp
+CMakeFiles/g.dir/src/Core/Application.cpp.o: CMakeFiles/g.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/perpbird/perpvsc/gpp/g/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/g.dir/src/Core/Application.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/g.dir/src/Core/Application.cpp.o -MF CMakeFiles/g.dir/src/Core/Application.cpp.o.d -o CMakeFiles/g.dir/src/Core/Application.cpp.o -c /home/perpbird/perpvsc/gpp/g/src/Core/Application.cpp
 
-CMakeFiles/g.dir/src/Renderer/ShaderRenderer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/g.dir/src/Renderer/ShaderRenderer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/perpbird/perpvsc/gpp/g/src/Renderer/ShaderRenderer.cpp > CMakeFiles/g.dir/src/Renderer/ShaderRenderer.cpp.i
+CMakeFiles/g.dir/src/Core/Application.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/g.dir/src/Core/Application.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/perpbird/perpvsc/gpp/g/src/Core/Application.cpp > CMakeFiles/g.dir/src/Core/Application.cpp.i
 
-CMakeFiles/g.dir/src/Renderer/ShaderRenderer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/g.dir/src/Renderer/ShaderRenderer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/perpbird/perpvsc/gpp/g/src/Renderer/ShaderRenderer.cpp -o CMakeFiles/g.dir/src/Renderer/ShaderRenderer.cpp.s
+CMakeFiles/g.dir/src/Core/Application.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/g.dir/src/Core/Application.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/perpbird/perpvsc/gpp/g/src/Core/Application.cpp -o CMakeFiles/g.dir/src/Core/Application.cpp.s
+
+CMakeFiles/g.dir/src/Core/Window.cpp.o: CMakeFiles/g.dir/flags.make
+CMakeFiles/g.dir/src/Core/Window.cpp.o: /home/perpbird/perpvsc/gpp/g/src/Core/Window.cpp
+CMakeFiles/g.dir/src/Core/Window.cpp.o: CMakeFiles/g.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/perpbird/perpvsc/gpp/g/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/g.dir/src/Core/Window.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/g.dir/src/Core/Window.cpp.o -MF CMakeFiles/g.dir/src/Core/Window.cpp.o.d -o CMakeFiles/g.dir/src/Core/Window.cpp.o -c /home/perpbird/perpvsc/gpp/g/src/Core/Window.cpp
+
+CMakeFiles/g.dir/src/Core/Window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/g.dir/src/Core/Window.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/perpbird/perpvsc/gpp/g/src/Core/Window.cpp > CMakeFiles/g.dir/src/Core/Window.cpp.i
+
+CMakeFiles/g.dir/src/Core/Window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/g.dir/src/Core/Window.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/perpbird/perpvsc/gpp/g/src/Core/Window.cpp -o CMakeFiles/g.dir/src/Core/Window.cpp.s
+
+CMakeFiles/g.dir/src/Graphics/Cube.cpp.o: CMakeFiles/g.dir/flags.make
+CMakeFiles/g.dir/src/Graphics/Cube.cpp.o: /home/perpbird/perpvsc/gpp/g/src/Graphics/Cube.cpp
+CMakeFiles/g.dir/src/Graphics/Cube.cpp.o: CMakeFiles/g.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/perpbird/perpvsc/gpp/g/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/g.dir/src/Graphics/Cube.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/g.dir/src/Graphics/Cube.cpp.o -MF CMakeFiles/g.dir/src/Graphics/Cube.cpp.o.d -o CMakeFiles/g.dir/src/Graphics/Cube.cpp.o -c /home/perpbird/perpvsc/gpp/g/src/Graphics/Cube.cpp
+
+CMakeFiles/g.dir/src/Graphics/Cube.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/g.dir/src/Graphics/Cube.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/perpbird/perpvsc/gpp/g/src/Graphics/Cube.cpp > CMakeFiles/g.dir/src/Graphics/Cube.cpp.i
+
+CMakeFiles/g.dir/src/Graphics/Cube.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/g.dir/src/Graphics/Cube.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/perpbird/perpvsc/gpp/g/src/Graphics/Cube.cpp -o CMakeFiles/g.dir/src/Graphics/Cube.cpp.s
+
+CMakeFiles/g.dir/src/Graphics/ShaderRenderer.cpp.o: CMakeFiles/g.dir/flags.make
+CMakeFiles/g.dir/src/Graphics/ShaderRenderer.cpp.o: /home/perpbird/perpvsc/gpp/g/src/Graphics/ShaderRenderer.cpp
+CMakeFiles/g.dir/src/Graphics/ShaderRenderer.cpp.o: CMakeFiles/g.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/perpbird/perpvsc/gpp/g/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/g.dir/src/Graphics/ShaderRenderer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/g.dir/src/Graphics/ShaderRenderer.cpp.o -MF CMakeFiles/g.dir/src/Graphics/ShaderRenderer.cpp.o.d -o CMakeFiles/g.dir/src/Graphics/ShaderRenderer.cpp.o -c /home/perpbird/perpvsc/gpp/g/src/Graphics/ShaderRenderer.cpp
+
+CMakeFiles/g.dir/src/Graphics/ShaderRenderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/g.dir/src/Graphics/ShaderRenderer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/perpbird/perpvsc/gpp/g/src/Graphics/ShaderRenderer.cpp > CMakeFiles/g.dir/src/Graphics/ShaderRenderer.cpp.i
+
+CMakeFiles/g.dir/src/Graphics/ShaderRenderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/g.dir/src/Graphics/ShaderRenderer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/perpbird/perpvsc/gpp/g/src/Graphics/ShaderRenderer.cpp -o CMakeFiles/g.dir/src/Graphics/ShaderRenderer.cpp.s
+
+CMakeFiles/g.dir/src/Graphics/Vertex.cpp.o: CMakeFiles/g.dir/flags.make
+CMakeFiles/g.dir/src/Graphics/Vertex.cpp.o: /home/perpbird/perpvsc/gpp/g/src/Graphics/Vertex.cpp
+CMakeFiles/g.dir/src/Graphics/Vertex.cpp.o: CMakeFiles/g.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/perpbird/perpvsc/gpp/g/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/g.dir/src/Graphics/Vertex.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/g.dir/src/Graphics/Vertex.cpp.o -MF CMakeFiles/g.dir/src/Graphics/Vertex.cpp.o.d -o CMakeFiles/g.dir/src/Graphics/Vertex.cpp.o -c /home/perpbird/perpvsc/gpp/g/src/Graphics/Vertex.cpp
+
+CMakeFiles/g.dir/src/Graphics/Vertex.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/g.dir/src/Graphics/Vertex.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/perpbird/perpvsc/gpp/g/src/Graphics/Vertex.cpp > CMakeFiles/g.dir/src/Graphics/Vertex.cpp.i
+
+CMakeFiles/g.dir/src/Graphics/Vertex.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/g.dir/src/Graphics/Vertex.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/perpbird/perpvsc/gpp/g/src/Graphics/Vertex.cpp -o CMakeFiles/g.dir/src/Graphics/Vertex.cpp.s
 
 CMakeFiles/g.dir/src/Resource/ResourceManager.cpp.o: CMakeFiles/g.dir/flags.make
 CMakeFiles/g.dir/src/Resource/ResourceManager.cpp.o: /home/perpbird/perpvsc/gpp/g/src/Resource/ResourceManager.cpp
 CMakeFiles/g.dir/src/Resource/ResourceManager.cpp.o: CMakeFiles/g.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/perpbird/perpvsc/gpp/g/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/g.dir/src/Resource/ResourceManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/perpbird/perpvsc/gpp/g/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/g.dir/src/Resource/ResourceManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/g.dir/src/Resource/ResourceManager.cpp.o -MF CMakeFiles/g.dir/src/Resource/ResourceManager.cpp.o.d -o CMakeFiles/g.dir/src/Resource/ResourceManager.cpp.o -c /home/perpbird/perpvsc/gpp/g/src/Resource/ResourceManager.cpp
 
 CMakeFiles/g.dir/src/Resource/ResourceManager.cpp.i: cmake_force
@@ -111,30 +167,89 @@ CMakeFiles/g.dir/src/Resource/ResourceManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/g.dir/src/Resource/ResourceManager.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/perpbird/perpvsc/gpp/g/src/Resource/ResourceManager.cpp -o CMakeFiles/g.dir/src/Resource/ResourceManager.cpp.s
 
+CMakeFiles/g.dir/src/Utils/FileUtils.cpp.o: CMakeFiles/g.dir/flags.make
+CMakeFiles/g.dir/src/Utils/FileUtils.cpp.o: /home/perpbird/perpvsc/gpp/g/src/Utils/FileUtils.cpp
+CMakeFiles/g.dir/src/Utils/FileUtils.cpp.o: CMakeFiles/g.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/perpbird/perpvsc/gpp/g/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/g.dir/src/Utils/FileUtils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/g.dir/src/Utils/FileUtils.cpp.o -MF CMakeFiles/g.dir/src/Utils/FileUtils.cpp.o.d -o CMakeFiles/g.dir/src/Utils/FileUtils.cpp.o -c /home/perpbird/perpvsc/gpp/g/src/Utils/FileUtils.cpp
+
+CMakeFiles/g.dir/src/Utils/FileUtils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/g.dir/src/Utils/FileUtils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/perpbird/perpvsc/gpp/g/src/Utils/FileUtils.cpp > CMakeFiles/g.dir/src/Utils/FileUtils.cpp.i
+
+CMakeFiles/g.dir/src/Utils/FileUtils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/g.dir/src/Utils/FileUtils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/perpbird/perpvsc/gpp/g/src/Utils/FileUtils.cpp -o CMakeFiles/g.dir/src/Utils/FileUtils.cpp.s
+
+CMakeFiles/g.dir/src/Utils/Logger.cpp.o: CMakeFiles/g.dir/flags.make
+CMakeFiles/g.dir/src/Utils/Logger.cpp.o: /home/perpbird/perpvsc/gpp/g/src/Utils/Logger.cpp
+CMakeFiles/g.dir/src/Utils/Logger.cpp.o: CMakeFiles/g.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/perpbird/perpvsc/gpp/g/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/g.dir/src/Utils/Logger.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/g.dir/src/Utils/Logger.cpp.o -MF CMakeFiles/g.dir/src/Utils/Logger.cpp.o.d -o CMakeFiles/g.dir/src/Utils/Logger.cpp.o -c /home/perpbird/perpvsc/gpp/g/src/Utils/Logger.cpp
+
+CMakeFiles/g.dir/src/Utils/Logger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/g.dir/src/Utils/Logger.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/perpbird/perpvsc/gpp/g/src/Utils/Logger.cpp > CMakeFiles/g.dir/src/Utils/Logger.cpp.i
+
+CMakeFiles/g.dir/src/Utils/Logger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/g.dir/src/Utils/Logger.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/perpbird/perpvsc/gpp/g/src/Utils/Logger.cpp -o CMakeFiles/g.dir/src/Utils/Logger.cpp.s
+
+CMakeFiles/g.dir/src/Utils/PathUtils.cpp.o: CMakeFiles/g.dir/flags.make
+CMakeFiles/g.dir/src/Utils/PathUtils.cpp.o: /home/perpbird/perpvsc/gpp/g/src/Utils/PathUtils.cpp
+CMakeFiles/g.dir/src/Utils/PathUtils.cpp.o: CMakeFiles/g.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/perpbird/perpvsc/gpp/g/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/g.dir/src/Utils/PathUtils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/g.dir/src/Utils/PathUtils.cpp.o -MF CMakeFiles/g.dir/src/Utils/PathUtils.cpp.o.d -o CMakeFiles/g.dir/src/Utils/PathUtils.cpp.o -c /home/perpbird/perpvsc/gpp/g/src/Utils/PathUtils.cpp
+
+CMakeFiles/g.dir/src/Utils/PathUtils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/g.dir/src/Utils/PathUtils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/perpbird/perpvsc/gpp/g/src/Utils/PathUtils.cpp > CMakeFiles/g.dir/src/Utils/PathUtils.cpp.i
+
+CMakeFiles/g.dir/src/Utils/PathUtils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/g.dir/src/Utils/PathUtils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/perpbird/perpvsc/gpp/g/src/Utils/PathUtils.cpp -o CMakeFiles/g.dir/src/Utils/PathUtils.cpp.s
+
 # Object files for target g
 g_OBJECTS = \
 "CMakeFiles/g.dir/src/main.cpp.o" \
-"CMakeFiles/g.dir/src/Renderer/ShaderRenderer.cpp.o" \
-"CMakeFiles/g.dir/src/Resource/ResourceManager.cpp.o"
+"CMakeFiles/g.dir/src/Core/Application.cpp.o" \
+"CMakeFiles/g.dir/src/Core/Window.cpp.o" \
+"CMakeFiles/g.dir/src/Graphics/Cube.cpp.o" \
+"CMakeFiles/g.dir/src/Graphics/ShaderRenderer.cpp.o" \
+"CMakeFiles/g.dir/src/Graphics/Vertex.cpp.o" \
+"CMakeFiles/g.dir/src/Resource/ResourceManager.cpp.o" \
+"CMakeFiles/g.dir/src/Utils/FileUtils.cpp.o" \
+"CMakeFiles/g.dir/src/Utils/Logger.cpp.o" \
+"CMakeFiles/g.dir/src/Utils/PathUtils.cpp.o"
 
 # External object files for target g
 g_EXTERNAL_OBJECTS =
 
-g : CMakeFiles/g.dir/src/main.cpp.o
-g : CMakeFiles/g.dir/src/Renderer/ShaderRenderer.cpp.o
-g : CMakeFiles/g.dir/src/Resource/ResourceManager.cpp.o
-g : CMakeFiles/g.dir/build.make
-g : external/glfw/src/libglfw3.a
-g : external/glfw/src/libglfw3.a
-g : external/glad/libglad.a
-g : /usr/lib/x86_64-linux-gnu/librt.a
-g : /usr/lib/x86_64-linux-gnu/libm.so
-g : CMakeFiles/g.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/perpbird/perpvsc/gpp/g/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable g"
+bin/g: CMakeFiles/g.dir/src/main.cpp.o
+bin/g: CMakeFiles/g.dir/src/Core/Application.cpp.o
+bin/g: CMakeFiles/g.dir/src/Core/Window.cpp.o
+bin/g: CMakeFiles/g.dir/src/Graphics/Cube.cpp.o
+bin/g: CMakeFiles/g.dir/src/Graphics/ShaderRenderer.cpp.o
+bin/g: CMakeFiles/g.dir/src/Graphics/Vertex.cpp.o
+bin/g: CMakeFiles/g.dir/src/Resource/ResourceManager.cpp.o
+bin/g: CMakeFiles/g.dir/src/Utils/FileUtils.cpp.o
+bin/g: CMakeFiles/g.dir/src/Utils/Logger.cpp.o
+bin/g: CMakeFiles/g.dir/src/Utils/PathUtils.cpp.o
+bin/g: CMakeFiles/g.dir/build.make
+bin/g: external/glfw/src/libglfw3.a
+bin/g: external/glfw/src/libglfw3.a
+bin/g: external/glad/libglad.a
+bin/g: external/glad/libglad.a
+bin/g: /usr/lib/x86_64-linux-gnu/librt.a
+bin/g: /usr/lib/x86_64-linux-gnu/libm.so
+bin/g: CMakeFiles/g.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/perpbird/perpvsc/gpp/g/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable bin/g"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/g.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Copying resources..."
+	/usr/bin/cmake -E copy_directory /home/perpbird/perpvsc/gpp/g/res/ /home/perpbird/perpvsc/gpp/g/build/bin/res/
 
 # Rule to build all files generated by this target.
-CMakeFiles/g.dir/build: g
+CMakeFiles/g.dir/build: bin/g
 .PHONY : CMakeFiles/g.dir/build
 
 CMakeFiles/g.dir/clean:

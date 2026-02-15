@@ -1,14 +1,14 @@
 #pragma once
 #include "Window.h"
-#include "Graphics/Shader.h"
-#include "Graphics/Cube.h"
+#include "../Graphics/ShaderRenderer.h"
+#include "../Graphics/Cube.h"
 #include "../Resource/ResourceManager.h"
 #include "../Utils/Logger.h"
 #include "../Utils/ErrorHandler.h"
 #include <memory>
 
 class Application {
-private:
+protected:
     std::unique_ptr<Window> window;
     std::unique_ptr<ResourceManager> resources;
     std::shared_ptr<Renderer::ShaderProgram> shader;

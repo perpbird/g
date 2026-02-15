@@ -1,6 +1,11 @@
 /home/perpbird/perpvsc/gpp/g/build/CMakeFiles/g.dir
 /home/perpbird/perpvsc/gpp/g/build/CMakeFiles/edit_cache.dir
 /home/perpbird/perpvsc/gpp/g/build/CMakeFiles/rebuild_cache.dir
+/home/perpbird/perpvsc/gpp/g/build/_deps/glm-build/CMakeFiles/edit_cache.dir
+/home/perpbird/perpvsc/gpp/g/build/_deps/glm-build/CMakeFiles/rebuild_cache.dir
+/home/perpbird/perpvsc/gpp/g/build/_deps/glm-build/glm/CMakeFiles/glm.dir
+/home/perpbird/perpvsc/gpp/g/build/_deps/glm-build/glm/CMakeFiles/edit_cache.dir
+/home/perpbird/perpvsc/gpp/g/build/_deps/glm-build/glm/CMakeFiles/rebuild_cache.dir
 /home/perpbird/perpvsc/gpp/g/build/external/glfw/CMakeFiles/edit_cache.dir
 /home/perpbird/perpvsc/gpp/g/build/external/glfw/CMakeFiles/rebuild_cache.dir
 /home/perpbird/perpvsc/gpp/g/build/external/glfw/src/CMakeFiles/glfw.dir

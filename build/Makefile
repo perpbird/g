@@ -130,6 +130,19 @@ g/fast:
 .PHONY : g/fast
 
 #=============================================================================
+# Target rules for targets named glm
+
+# Build rule for target.
+glm: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glm
+.PHONY : glm
+
+# fast build rule for target.
+glm/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/glm-build/glm/CMakeFiles/glm.dir/build.make _deps/glm-build/glm/CMakeFiles/glm.dir/build
+.PHONY : glm/fast
+
+#=============================================================================
 # Target rules for targets named glfw
 
 # Build rule for target.
@@ -168,29 +181,125 @@ glad/fast:
 	$(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/build
 .PHONY : glad/fast
 
-src/Renderer/ShaderRenderer.o: src/Renderer/ShaderRenderer.cpp.o
-.PHONY : src/Renderer/ShaderRenderer.o
+src/Core/Application.o: src/Core/Application.cpp.o
+.PHONY : src/Core/Application.o
 
 # target to build an object file
-src/Renderer/ShaderRenderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Renderer/ShaderRenderer.cpp.o
-.PHONY : src/Renderer/ShaderRenderer.cpp.o
+src/Core/Application.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Core/Application.cpp.o
+.PHONY : src/Core/Application.cpp.o
 
-src/Renderer/ShaderRenderer.i: src/Renderer/ShaderRenderer.cpp.i
-.PHONY : src/Renderer/ShaderRenderer.i
+src/Core/Application.i: src/Core/Application.cpp.i
+.PHONY : src/Core/Application.i
 
 # target to preprocess a source file
-src/Renderer/ShaderRenderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Renderer/ShaderRenderer.cpp.i
-.PHONY : src/Renderer/ShaderRenderer.cpp.i
+src/Core/Application.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Core/Application.cpp.i
+.PHONY : src/Core/Application.cpp.i
 
-src/Renderer/ShaderRenderer.s: src/Renderer/ShaderRenderer.cpp.s
-.PHONY : src/Renderer/ShaderRenderer.s
+src/Core/Application.s: src/Core/Application.cpp.s
+.PHONY : src/Core/Application.s
 
 # target to generate assembly for a file
-src/Renderer/ShaderRenderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Renderer/ShaderRenderer.cpp.s
-.PHONY : src/Renderer/ShaderRenderer.cpp.s
+src/Core/Application.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Core/Application.cpp.s
+.PHONY : src/Core/Application.cpp.s
+
+src/Core/Window.o: src/Core/Window.cpp.o
+.PHONY : src/Core/Window.o
+
+# target to build an object file
+src/Core/Window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Core/Window.cpp.o
+.PHONY : src/Core/Window.cpp.o
+
+src/Core/Window.i: src/Core/Window.cpp.i
+.PHONY : src/Core/Window.i
+
+# target to preprocess a source file
+src/Core/Window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Core/Window.cpp.i
+.PHONY : src/Core/Window.cpp.i
+
+src/Core/Window.s: src/Core/Window.cpp.s
+.PHONY : src/Core/Window.s
+
+# target to generate assembly for a file
+src/Core/Window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Core/Window.cpp.s
+.PHONY : src/Core/Window.cpp.s
+
+src/Graphics/Cube.o: src/Graphics/Cube.cpp.o
+.PHONY : src/Graphics/Cube.o
+
+# target to build an object file
+src/Graphics/Cube.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Graphics/Cube.cpp.o
+.PHONY : src/Graphics/Cube.cpp.o
+
+src/Graphics/Cube.i: src/Graphics/Cube.cpp.i
+.PHONY : src/Graphics/Cube.i
+
+# target to preprocess a source file
+src/Graphics/Cube.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Graphics/Cube.cpp.i
+.PHONY : src/Graphics/Cube.cpp.i
+
+src/Graphics/Cube.s: src/Graphics/Cube.cpp.s
+.PHONY : src/Graphics/Cube.s
+
+# target to generate assembly for a file
+src/Graphics/Cube.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Graphics/Cube.cpp.s
+.PHONY : src/Graphics/Cube.cpp.s
+
+src/Graphics/ShaderRenderer.o: src/Graphics/ShaderRenderer.cpp.o
+.PHONY : src/Graphics/ShaderRenderer.o
+
+# target to build an object file
+src/Graphics/ShaderRenderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Graphics/ShaderRenderer.cpp.o
+.PHONY : src/Graphics/ShaderRenderer.cpp.o
+
+src/Graphics/ShaderRenderer.i: src/Graphics/ShaderRenderer.cpp.i
+.PHONY : src/Graphics/ShaderRenderer.i
+
+# target to preprocess a source file
+src/Graphics/ShaderRenderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Graphics/ShaderRenderer.cpp.i
+.PHONY : src/Graphics/ShaderRenderer.cpp.i
+
+src/Graphics/ShaderRenderer.s: src/Graphics/ShaderRenderer.cpp.s
+.PHONY : src/Graphics/ShaderRenderer.s
+
+# target to generate assembly for a file
+src/Graphics/ShaderRenderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Graphics/ShaderRenderer.cpp.s
+.PHONY : src/Graphics/ShaderRenderer.cpp.s
+
+src/Graphics/Vertex.o: src/Graphics/Vertex.cpp.o
+.PHONY : src/Graphics/Vertex.o
+
+# target to build an object file
+src/Graphics/Vertex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Graphics/Vertex.cpp.o
+.PHONY : src/Graphics/Vertex.cpp.o
+
+src/Graphics/Vertex.i: src/Graphics/Vertex.cpp.i
+.PHONY : src/Graphics/Vertex.i
+
+# target to preprocess a source file
+src/Graphics/Vertex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Graphics/Vertex.cpp.i
+.PHONY : src/Graphics/Vertex.cpp.i
+
+src/Graphics/Vertex.s: src/Graphics/Vertex.cpp.s
+.PHONY : src/Graphics/Vertex.s
+
+# target to generate assembly for a file
+src/Graphics/Vertex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Graphics/Vertex.cpp.s
+.PHONY : src/Graphics/Vertex.cpp.s
 
 src/Resource/ResourceManager.o: src/Resource/ResourceManager.cpp.o
 .PHONY : src/Resource/ResourceManager.o
@@ -215,6 +324,78 @@ src/Resource/ResourceManager.s: src/Resource/ResourceManager.cpp.s
 src/Resource/ResourceManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Resource/ResourceManager.cpp.s
 .PHONY : src/Resource/ResourceManager.cpp.s
+
+src/Utils/FileUtils.o: src/Utils/FileUtils.cpp.o
+.PHONY : src/Utils/FileUtils.o
+
+# target to build an object file
+src/Utils/FileUtils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Utils/FileUtils.cpp.o
+.PHONY : src/Utils/FileUtils.cpp.o
+
+src/Utils/FileUtils.i: src/Utils/FileUtils.cpp.i
+.PHONY : src/Utils/FileUtils.i
+
+# target to preprocess a source file
+src/Utils/FileUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Utils/FileUtils.cpp.i
+.PHONY : src/Utils/FileUtils.cpp.i
+
+src/Utils/FileUtils.s: src/Utils/FileUtils.cpp.s
+.PHONY : src/Utils/FileUtils.s
+
+# target to generate assembly for a file
+src/Utils/FileUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Utils/FileUtils.cpp.s
+.PHONY : src/Utils/FileUtils.cpp.s
+
+src/Utils/Logger.o: src/Utils/Logger.cpp.o
+.PHONY : src/Utils/Logger.o
+
+# target to build an object file
+src/Utils/Logger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Utils/Logger.cpp.o
+.PHONY : src/Utils/Logger.cpp.o
+
+src/Utils/Logger.i: src/Utils/Logger.cpp.i
+.PHONY : src/Utils/Logger.i
+
+# target to preprocess a source file
+src/Utils/Logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Utils/Logger.cpp.i
+.PHONY : src/Utils/Logger.cpp.i
+
+src/Utils/Logger.s: src/Utils/Logger.cpp.s
+.PHONY : src/Utils/Logger.s
+
+# target to generate assembly for a file
+src/Utils/Logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Utils/Logger.cpp.s
+.PHONY : src/Utils/Logger.cpp.s
+
+src/Utils/PathUtils.o: src/Utils/PathUtils.cpp.o
+.PHONY : src/Utils/PathUtils.o
+
+# target to build an object file
+src/Utils/PathUtils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Utils/PathUtils.cpp.o
+.PHONY : src/Utils/PathUtils.cpp.o
+
+src/Utils/PathUtils.i: src/Utils/PathUtils.cpp.i
+.PHONY : src/Utils/PathUtils.i
+
+# target to preprocess a source file
+src/Utils/PathUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Utils/PathUtils.cpp.i
+.PHONY : src/Utils/PathUtils.cpp.i
+
+src/Utils/PathUtils.s: src/Utils/PathUtils.cpp.s
+.PHONY : src/Utils/PathUtils.s
+
+# target to generate assembly for a file
+src/Utils/PathUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/src/Utils/PathUtils.cpp.s
+.PHONY : src/Utils/PathUtils.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -252,12 +433,34 @@ help:
 	@echo "... g"
 	@echo "... glad"
 	@echo "... glfw"
-	@echo "... src/Renderer/ShaderRenderer.o"
-	@echo "... src/Renderer/ShaderRenderer.i"
-	@echo "... src/Renderer/ShaderRenderer.s"
+	@echo "... glm"
+	@echo "... src/Core/Application.o"
+	@echo "... src/Core/Application.i"
+	@echo "... src/Core/Application.s"
+	@echo "... src/Core/Window.o"
+	@echo "... src/Core/Window.i"
+	@echo "... src/Core/Window.s"
+	@echo "... src/Graphics/Cube.o"
+	@echo "... src/Graphics/Cube.i"
+	@echo "... src/Graphics/Cube.s"
+	@echo "... src/Graphics/ShaderRenderer.o"
+	@echo "... src/Graphics/ShaderRenderer.i"
+	@echo "... src/Graphics/ShaderRenderer.s"
+	@echo "... src/Graphics/Vertex.o"
+	@echo "... src/Graphics/Vertex.i"
+	@echo "... src/Graphics/Vertex.s"
 	@echo "... src/Resource/ResourceManager.o"
 	@echo "... src/Resource/ResourceManager.i"
 	@echo "... src/Resource/ResourceManager.s"
+	@echo "... src/Utils/FileUtils.o"
+	@echo "... src/Utils/FileUtils.i"
+	@echo "... src/Utils/FileUtils.s"
+	@echo "... src/Utils/Logger.o"
+	@echo "... src/Utils/Logger.i"
+	@echo "... src/Utils/Logger.s"
+	@echo "... src/Utils/PathUtils.o"
+	@echo "... src/Utils/PathUtils.i"
+	@echo "... src/Utils/PathUtils.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

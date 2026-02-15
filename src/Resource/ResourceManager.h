@@ -2,14 +2,15 @@
 #include <string>
 #include <memory>
 #include <map>
+#include "../Graphics/ShaderRenderer.h" 
 
-namespace Render{
+namespace Renderer{
     class ShaderProgram;
 }
 
 class ResourceManager{
 private:
-    typedef std::map<const std::string, std::shared_ptr<Render::ShaderProgram>> ShaderProgramMap;
+    typedef std::map<const std::string, std::shared_ptr<Renderer::ShaderProgram>> ShaderProgramMap;
     ShaderProgramMap m_shaderPrograms;
 
     std::string m_path;
@@ -21,8 +22,8 @@ private:
 public:
     ResourceManager(const std::string& Path);
     
-    std::shared_ptr<Render::ShaderProgram> loadShader(const std::string& shaderName, const std::string& vertexPath, const std::string& fragmentPath);
-    std::shared_ptr<Render::ShaderProgram> getShader(const std::string& shaderName);
+    std::shared_ptr<Renderer::ShaderProgram> loadShader(const std::string& shaderName, const std::string& vertexPath, const std::string& fragmentPath);
+    std::shared_ptr<Renderer::ShaderProgram> getShader(const std::string& shaderName);
 
     ~ResourceManager() = default;
 };
