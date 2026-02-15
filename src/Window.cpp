@@ -1,7 +1,7 @@
 #pragma once
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include "./Render/ShaderRender.h"
+#include "./Renderer/ShaderRenderer.h"
 #include "ExceptionClass.cpp"
 #include "Screen.cpp"
 #include <iostream>

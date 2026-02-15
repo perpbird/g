@@ -1,6 +1,7 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include "./Render/ShaderRender.h"
+#include "./Renderer/ShaderRenderer.h"
+#include "./Resource/ResourceManager.h"
 #include "ExceptionClass.cpp"
 #include "Screen.cpp"
 #include "Window.cpp"
@@ -13,7 +14,7 @@
 GLfloat point[] = {
     0.0f, 0.5f, 0.0f,
     0.5f, -0.5f, 0.0f,
-    0.0f, -0.5f, 0.5f
+    -0.5f, -0.5f, 0.5f
 };
 
 GLfloat color[] = {
@@ -24,21 +25,21 @@ GLfloat color[] = {
 
 const char* vertex_shader = 
 "#version 460\n"
-"layout(location = 0) in vec3 vertex_position;\n"
-"layout(location = 1) in vec3 vertex_color;\n"
-"out vec3 color;\n"
-"void main(){\n"
-"    color = vertex_color;\n"
-"    gl_Position = vec4(vertex_position, 1.0);\n"
-"}\n";
+"layout(location = 0) in vec3 vertex_position;"
+"layout(location = 1) in vec3 vertex_color;"
+"out vec3 color;"
+"void main(){"
+"    color = vertex_color;"
+"    gl_Position = vec4(vertex_position, 1.0);"
+"}";
 
 const char* fragment_shader = 
 "#version 460\n"
-"in vec3 color;\n"
-"out vec4 frag_color;\n"
-"void main(){\n"
+"in vec3 color;"
+"out vec4 frag_color;"
+"void main(){"
 "    frag_color = vec4(color, 1.0);\n"
-"}\n";
+"}";
 
 GLuint vao = 0;  // Глобальная или статическая переменная
 GLuint points_vbo = 0;
@@ -127,7 +128,7 @@ int main() {
         std::string vertex_str(vertex_shader);
         std::string fragment_str(fragment_shader);
         
-        Render::ShaderProgram shaderProgram(vertex_str, fragment_str);
+        Renderer::ShaderProgram shaderProgram(vertex_str, fragment_str);
         
         if (!shaderProgram.isCompiled()) {
             throw ErrorException("Can't create shader program");

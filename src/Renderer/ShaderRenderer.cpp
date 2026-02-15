@@ -1,8 +1,8 @@
-#include "ShaderRender.h"
+#include "ShaderRenderer.h"
 #include <iostream>
 #include <utility>
 
-namespace Render {
+namespace Renderer {
     ShaderProgram::ShaderProgram(const std::string& vertexShader, const std::string& fragmentShader) {
         GLuint vertexShaderID;
         if (!createShader(vertexShader, GL_VERTEX_SHADER, vertexShaderID)) {
@@ -26,7 +26,7 @@ namespace Render {
         glGetProgramiv(m_ID, GL_LINK_STATUS, &success);
         if (!success) {
             GLchar infoLog[1024];
-            glGetProgramInfoLog(m_ID, 1024, nullptr, infoLog);  // Исправлено: glGetProgramInfoLog
+            glGetProgramInfoLog(m_ID, 1024, nullptr, infoLog);
             std::cerr << "ERROR::SHADER: Link time error:\n" << infoLog << std::endl;
         } else {
             m_isCompiled = true;

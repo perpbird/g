@@ -2,10 +2,13 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <string>
+#include <glm/glm.hpp>
+#include <glm/gtc/type_ptr.hpp>
+
 typedef unsigned int GLuint;
 typedef int GLint;
 
-namespace Render {
+namespace Renderer {
     class ShaderProgram {
     private:
         GLuint m_ID = 0;
@@ -28,6 +31,10 @@ namespace Render {
         void setFloat(const std::string& name, float value) const;
         void setFloat3(const std::string& name, float v1, float v2, float v3) const;
         void setFloat4(const std::string& name, float v1, float v2, float v3, float v4) const;
+
+        void setMat4(const std::string& name, const glm::mat4& mat) const {
+            glUniformMatrix4fv(getUniformLocation(name), 1, GL_FALSE, glm::value_ptr(mat));
+        }
         
     private:
         ShaderProgram() = delete;
